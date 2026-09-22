@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Завдання 5 - Інтерактивна карта</title>
+</head>
+<body style="font-family: Arial, sans-serif; text-align: center; background-color: #f4f4f4; padding: 20px;">
+
+<h1>Завдання 5. Інтерактивна карта України</h1>
+<p>Натисніть на область на карті, щоб відкрити статтю про неї у Вікіпедії (наприклад: Львів, Чернівці, Київ, Одеса, Харків).</p>
+
+<!-- Зображення вміщено в блочний елемент div за умовою -->
+<div style="max-width: 830px; margin: 20px auto; background: #fff; padding: 15px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); overflow-x: auto;">
+
+    <!-- Карта України з ФІКСОВАНОЮ шириною 800px для точного збігу координат -->
+    <img src="../assets/ukraine.png"
+         usemap="#ukraine_map"
+         alt="Карта областей України"
+         width="800"
+         height="538"
+         style="display: block; margin: 0 auto; border: none;">
+    <!-- Створення інтерактивних зон (координати чітко підігнані під розмір 800х538) -->
+    <map name="ukraine_map">
+        <!-- Львівська область (Захід) -->
+        <area shape="rect" coords="40,150,150,250" href="https://wikipedia.org" target="_blank" alt="Львівська область">
+
+        <!-- Чернівецька область (Південний захід) -->
+        <area shape="rect" coords="180,310,270,360" href="https://wikipedia.org" target="_blank" alt="Чернівецька область">
+
+        <!-- Київська область (Північ/Центр) -->
+        <area shape="rect" coords="370,100,460,210" href="https://wikipedia.org" target="_blank" alt="Київська область">
+
+        <!-- Одеська область (Південь) -->
+        <area shape="rect" coords="320,300,430,450" href="https://wikipedia.org" target="_blank" alt="Одеська область">
+
+        <!-- Харківська область (Схід) -->
+        <area shape="rect" coords="590,160,710,250" href="https://wikipedia.org" target="_blank" alt="Харківська область">
+    </map>
+
+</div>
+
+<br><br>
+<p><a href="../index.html" style="font-size: 16px; color: #0066cc; text-decoration: none; font-weight: bold;">Повернутись на головну</a></p>
+
+</body>
+</html>

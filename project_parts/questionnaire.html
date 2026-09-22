@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Завдання 4 - Анкета користувача</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f0f2f5; padding: 20px;">
+
+<!-- Головний заголовок вирівняний по центру -->
+<h1 style="text-align: center; color: #333;">Анкета користувача</h1>
+
+<!-- Батьківський блочний елемент по центру з демонстрацією GET/POST та enctype -->
+<div style="max-width: 650px; margin: 0 auto; background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+
+    <form method="get" action="" enctype="multipart/form-data" style="text-align: left;">
+
+        <!-- БЛОК 1: Основні дані -->
+        <fieldset style="border: 2px solid #0066cc; border-radius: 6px; padding: 20px; margin-bottom: 20px;">
+            <legend style="color: #0066cc; font-weight: bold; padding: 0 10px;">Основна інформація</legend>
+
+            <p>
+                <label for="username">Ім'я користувача (Обов'язково):</label><br>
+                <input type="text" id="username" name="username" placeholder="Введіть ваше ім'я" required tabindex="1" style="width: 100%; padding: 8px; margin-top: 5px; box-sizing: border-box;">
+            </p>
+
+            <p>
+                <label for="useremail">Електронна пошта (Без автозаповнення):</label><br>
+                <input type="email" id="useremail" name="useremail" placeholder="example@mail.com" autocomplete="off" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required tabindex="2" style="width: 100%; padding: 8px; margin-top: 5px; box-sizing: border-box;">
+            </p>
+
+            <p>
+                <label for="userphone">Мобільний номер (Формат: +380XXXXXXXXX):</label><br>
+                <input type="tel" id="userphone" name="userphone" placeholder="+380123456789" pattern="^\+380\d{9}$" required tabindex="3" style="width: 100%; padding: 8px; margin-top: 5px; box-sizing: border-box;">
+            </p>
+
+            <p>
+                <label for="userpassword">Пароль (6 знаків: 1 велика, 1 мала літери, 1 цифра):</label><br>
+                <input type="password" id="userpassword" name="userpassword" placeholder="Пароль" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{6}$" required tabindex="4" style="width: 100%; padding: 8px; margin-top: 5px; box-sizing: border-box;">
+            </p>
+
+            <p>
+                <label for="userbirth">Дата народження:</label><br>
+                <input type="date" id="userbirth" name="userbirth" required tabindex="5" style="width: 100%; padding: 8px; margin-top: 5px; box-sizing: border-box;">
+            </p>
+        </fieldset>
+
+        <!-- БЛОК 2: Вибір варіантів (Radio та Checkbox) -->
+        <fieldset style="border: 2px solid #00cc66; border-radius: 6px; padding: 20px; margin-bottom: 20px;">
+            <legend style="color: #00cc66; font-weight: bold; padding: 0 10px;">Вподобання та Опитування</legend>
+
+            <!-- Блок radio 1 -->
+            <p><strong>Ваш рівень освіти:</strong><br>
+                <label><input type="radio" name="education" value="school" tabindex="6"> Середня</label><br>
+                <label><input type="radio" name="education" value="bachelor" tabindex="7"> Бакалавр</label><br>
+                <label><input type="radio" name="education" value="master" tabindex="8"> Магістр</label>
+            </p>
+
+            <!-- Блок radio 2 (з активністю за замовчуванням checked) -->
+            <p><strong>Бажаний формат навчання:</strong><br>
+                <label><input type="radio" name="format" value="online" tabindex="9"> Онлайн</label><br>
+                <label><input type="radio" name="format" value="offline" checked tabindex="10"> Офлайн (За замовчуванням)</label><br>
+                <label><input type="radio" name="format" value="mixed" tabindex="11"> Змішаний</label>
+            </p>
+
+            <!-- Блок checkbox з 4 значеннями -->
+            <p><strong>Які веб-технології ви хочете вивчити (Оберіть декілька):</strong><br>
+                <label><input type="checkbox" name="tech" value="html" tabindex="12"> HTML5</label><br>
+                <label><input type="checkbox" name="tech" value="css" tabindex="13"> CSS3</label><br>
+                <label><input type="checkbox" name="tech" value="js" tabindex="14"> JavaScript</label><br>
+                <label><input type="checkbox" name="tech" value="backend" tabindex="15"> Node.js</label>
+            </p>
+        </fieldset>
+
+        <!-- БЛОК 3: Списки та Медіафайли -->
+        <fieldset style="border: 2px solid #ff9900; border-radius: 6px; padding: 20px; margin-bottom: 20px;">
+            <legend style="color: #ff9900; font-weight: bold; padding: 0 10px;">Списки та завантаження</legend>
+
+            <!-- Випадний список (5 значень, 3-тє вибране за замовчуванням) -->
+            <p>
+                <label for="usercity">Ваше місто:</label><br>
+                <select id="usercity" name="usercity" tabindex="16" style="width: 100%; padding: 8px; margin-top: 5px;">
+                    <option value="kyiv">Київ</option>
+                    <option value="lviv">Львів</option>
+                    <option value="chernivtsi" selected>Чернівці (За замовчуванням)</option>
+                    <option value="odesa">Одеса</option>
+                    <option value="kharkiv">Харків</option>
+                </select>
+            </p>
+
+            <!-- Випадний список із 6 значеннями та множинним вибором -->
+            <p>
+                <label for="languages">Якими мовами спілкуєтесь (Утримуйте Ctrl для вибору кількох):</label><br>
+                <select id="languages" name="languages" multiple tabindex="17" style="width: 100%; padding: 8px; margin-top: 5px; height: 110px;">
+                    <option value="ua">Українська</option>
+                    <option value="en">Англійська</option>
+                    <option value="de">Німецька</option>
+                    <option value="fr">Французька</option>
+                    <option value="pl">Польська</option>
+                    <option value="es">Іспанська</option>
+                </select>
+            </p>
+
+            <!-- Випадний список з 4 групами по 3 значення (optgroup) -->
+            <p>
+                <label for="course_select">Оберіть напрям курсу:</label><br>
+                <select id="course_select" name="course_select" tabindex="18" style="width: 100%; padding: 8px; margin-top: 5px;">
+                    <optgroup label="Frontend">
+                        <option value="html_css">HTML/CSS</option>
+                        <option value="react">React Foundation</option>
+                        <option value="vue">Vue.js Advanced</option>
+                    </optgroup>
+                    <optgroup label="Backend">
+                        <option value="python_dev">Python (Django)</option>
+                        <option value="php_dev">PHP (Laravel)</option>
+                        <option value="java_dev">Java (Spring)</option>
+                    </optgroup>
+                    <optgroup label="Design">
+                        <option value="ui_ux">UI/UX Design</option>
+                        <option value="figma">Figma Mastery</option>
+                        <option value="photoshop">Adobe Photoshop</option>
+                    </optgroup>
+                    <optgroup label="QA Testing">
+                        <option value="manual_qa">Manual QA</option>
+                        <option value="automation">Automation QA</option>
+                        <option value="security">Security Testing</option>
+                    </optgroup>
+                </select>
+            </p>
+
+            <!-- Випадний список із підказками (datalist) -->
+            <p>
+                <label for="browser_input">Ваш основний браузер (зі списку підказок):</label><br>
+                <input list="browsers" id="browser_input" name="browser" placeholder="Почніть вводити..." tabindex="19" style="width: 100%; padding: 8px; margin-top: 5px; box-sizing: border-box;">
+                <datalist id="browsers">
+                    <option value="Google Chrome">
+                    <option value="Mozilla Firefox">
+                    <option value="Opera">
+                    <option value="Microsoft Edge">
+                    <option value="Safari">
+                </datalist>
+            </p>
+
+            <!-- Кнопка завантаження ТІЛЬКИ аудіофайлів і більше ніж одного (accept + multiple) -->
+            <p>
+                <label for="audiofiles">Завантажити аудіо-привітання (Тільки аудіо, можна декілька):</label><br>
+                <input type="file" id="audiofiles" name="audiofiles[]" accept="audio/*" multiple tabindex="20" style="margin-top: 5px;">
+            </p>
+
+            <!-- Текстова область textarea -->
+            <p>
+                <label for="comments">Додаткові коментарі про себе:</label><br>
+                <textarea id="comments" name="comments" rows="4" placeholder="Розкажіть про ваш досвід..." tabindex="21" style="width: 100%; padding: 8px; margin-top: 5px; box-sizing: border-box; resize: vertical;"></textarea>
+            </p>
+        </fieldset>
+
+        <!-- Кнопки керування формою -->
+        <div style="text-align: center; margin-top: 25px;">

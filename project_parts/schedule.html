@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Завдання 3 - Розклад занять</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f9f9f9; margin: 0; padding: 20px;">
+
+<!-- Головний заголовок 1-го рівня за межами div -->
+<h1 style="text-align: center; color: #222;">Дні тижня:</h1>
+
+<!-- Батьківський блочний елемент div (розташований по центру вікна браузера) -->
+<div style="max-width: 600px; margin: 0 auto; background-color: #ffffff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center;">
+
+    <!-- Маркований список із посиланнями-якорями -->
+    <ul style="list-style-type: square; display: inline-block; text-align: left; font-size: 18px; line-height: 1.8; margin-bottom: 40px;">
+        <li><a href="#mon" style="color: #0066cc; text-decoration: none; font-weight: bold;">Понеділок</a></li>
+        <li><a href="#tue" style="color: #0066cc; text-decoration: none; font-weight: bold;">Вівторок</a></li>
+        <li><a href="#wed" style="color: #0066cc; text-decoration: none; font-weight: bold;">Середа</a></li>
+        <li><a href="#thu" style="color: #0066cc; text-decoration: none; font-weight: bold;">Четвер</a></li>
+        <li><a href="#fri" style="color: #0066cc; text-decoration: none; font-weight: bold;">П'ятниця (Вихідний)</a></li>
+        <li><a href="#sat" style="color: #0066cc; text-decoration: none; font-weight: bold;">Субота (Вихідний)</a></li>
+        <li><a href="#sun" style="color: #0066cc; text-decoration: none; font-weight: bold;">Неділя (Вихідний)</a></li>
+    </ul>
+
+    <!-- БЛОК: ПОНЕДІЛОК -->
+    <div id="mon" style="margin-bottom: 5px; padding-top: 20px;">
+        <table border="1" cellspacing="0" cellpadding="8" style="width: 100%; border-collapse: collapse; background-color: #e6f2ff; border-color: #0066cc;">
+            <tr style="background-color: #0066cc; color: white;">
+                <th colspan="3">Розклад понеділка (за двома тижнями)</th>
+            </tr>
+            <tr><td>1 пара</td><td>Веб-технології (Лекція)</td><td>Чисельний тиждень</td></tr>
+            <tr><td>2 paper</td><td>Вища математика (Практика)</td><td>Знаменний тиждень</td></tr>
+        </table>
+    </div>
+    <div style="margin-bottom: 40px;">
+        <img src="https://unsplash.com" alt="Навчання" width="400" height="400" style="margin-top: 10px; border-radius: 4px;">
+    </div>
+
+    <!-- БЛОК: ВІВТОРОК -->
+    <div id="tue" style="margin-bottom: 5px; padding-top: 20px;">
+        <table border="1" cellspacing="0" cellpadding="8" style="width: 100%; border-collapse: collapse; background-color: #e6ffe6; border-color: #00cc66;">
+            <tr style="background-color: #00cc66; color: white;">
+                <th colspan="3">Розклад вівторка (за двома тижнями)</th>
+            </tr>
+            <tr><td>2 пара</td><td>Іноземна мова (Практика)</td><td>Постійно</td></tr>
+            <tr><td>3 пара</td><td>Програмування (Лабораторна)</td><td>Чисельний тиждень</td></tr>
+        </table>
+    </div>
+    <div style="margin-bottom: 40px;">
+        <img src="https://unsplash.com" alt="Студенти" width="400" height="400" style="margin-top: 10px; border-radius: 4px;">
+    </div>
+
+    <!-- БЛОК: СЕРЕДА -->
+    <div id="wed" style="margin-bottom: 5px; padding-top: 20px;">
+        <table border="1" cellspacing="0" cellpadding="8" style="width: 100%; border-collapse: collapse; background-color: #fff0f5; border-color: #ff1493;">
+            <tr style="background-color: #ff1493; color: white;">
+                <th colspan="3">Розклад середи (за двома тижнями)</th>
+            </tr>
+            <tr><td>1 пара</td><td>Фізичне виховання</td><td>Постійно</td></tr>
+            <tr><td>4 пара</td><td>Дискретна математика</td><td>Знаменний тиждень</td></tr>
+        </table>
+    </div>
+    <div style="margin-bottom: 40px;">
+        <img src="https://unsplash.com" alt="Нотатки" width="400" height="400" style="margin-top: 10px; border-radius: 4px;">
+    </div>
+
+    <!-- БЛОК: ЧЕТВЕР -->
+    <div id="thu" style="margin-bottom: 5px; padding-top: 20px;">
+        <table border="1" cellspacing="0" cellpadding="8" style="width: 100%; border-collapse: collapse; background-color: #fff2e6; border-color: #ff8000;">
+            <tr style="background-color: #ff8000; color: white;">
+                <th colspan="3">Розклад четверга (за двома тижнями)</th>
+            </tr>
+            <tr><td>2 пара</td><td>Алгоритми та структури даних</td><td>Постійно</td></tr>
+        </table>
+    </div>
+    <div style="margin-bottom: 40px;">
+        <img src="https://unsplash.com" alt="Програмування" width="400" height="400" style="margin-top: 10px; border-radius: 4px;">
+    </div>
+
+    <!-- БЛОК: П'ЯТНИЦЯ (ВИХІДНИЙ - ВІДПОЧИНОК) -->
+    <div id="fri" style="margin-bottom: 5px; padding-top: 20px;">
+        <table border="1" cellspacing="0" cellpadding="8" style="width: 100%; border-collapse: collapse; background-color: #f9f2ec; border-color: #8a5a36;">
+            <tr style="background-color: #8a5a36; color: white;">
+                <th colspan="3">Розклад п'ятниці (Вільний день від пар)</th>
+            </tr>
+            <tr><td>Увесь день</td><td>Перегляд улюблених серіалів, геймінг та хобі</td><td>Відпочинок</td></tr>
+        </table>
+    </div>
+    <div style="margin-bottom: 40px;">
+        <!-- Картинка затишного відпочинку (кінотеатр/ноутбук/серіали) -->
+        <img src="https://unsplash.com" alt="Перегляд фільмів у п'ятницю" width="400" height="400" style="margin-top: 10px; border-radius: 4px;">
+    </div>
+
+    <!-- БЛОК: СУБОТА (ВИХІДНИЙ - ДОЗВІЛЛЯ) -->
+    <div id="sat" style="margin-bottom: 5px; padding-top: 20px;">
+        <table border="1" cellspacing="0" cellpadding="8" style="width: 100%; border-collapse: collapse; background-color: #f2e6ff; border-color: #8000ff;">
+            <tr style="background-color: #8000ff; color: white;">
+                <th colspan="3">Розклад вільного часу суботи (Вихідний)</th>
+            </tr>
+            <tr><td>День / Вечір</td><td>Прогулянки містом, зустрічі з друзями, кав'ярні</td><td>Дозвілля</td></tr>
+        </table>
+    </div>
+    <div style="margin-bottom: 40px;">
+        <!-- Картинка прогулянки або кави з друзями -->
+        <img src="https://unsplash.com" alt="Зустріч з друзями в суботу" width="400" height="400" style="margin-top: 10px; border-radius: 4px;">
+    </div>
+
+    <!-- БЛОК: НЕДІЛЯ (ВИХІДНИЙ - РЕЛАКС) -->
+    <div id="sun" style="margin-bottom: 5px; padding-top: 20px;">
+        <table border="1" cellspacing="0" cellpadding="8" style="width: 100%; border-collapse: collapse; background-color: #ffe6e6; border-color: #cc0000;">
+            <tr style="background-color: #cc0000; color: white;">
+                <th colspan="3">Розклад вільного часу неділі (Вихідний)</th>
+            </tr>
+            <tr><td>Увесь день</td><td>Повний релакс, здоровий сон та підготовка до нового тижня</td><td>Релакс</td></tr>
+        </table>
+    </div>
+    <div style="margin-bottom: 40px;">
+        <!-- Картинка відпочинку/сну/природи -->
+        <img src="https://unsplash.com" alt="Повний релакс у неділю" width="400" height="400" style="margin-top: 10px; border-radius: 4px;">
+    </div>
+
+    <!-- Посилання для повернення на головну -->
+    <p style="margin-top: 30px;"><a href="../index.html" style="font-size: 16px; color: #0066cc; text-decoration: none; font-weight: bold;">Повернутись на головну</a></p>
+
+</div>
+
+</body>
+</html>
