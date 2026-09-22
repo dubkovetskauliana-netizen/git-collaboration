@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Останні новини - Блог</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f0f2f5; margin: 0; padding: 20px; color: #333; line-height: 1.6;">
+
+<div style="max-width: 1000px; margin: 0 auto;">
+
+    <!-- ШАПКА БЛОГУ -->
+    <header style="background-color: #ffffff; padding: 20px; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+        <h1 style="margin: 0 0 10px 0; color: #222;">Останні новини</h1>
+        <!-- Навігаційне меню з трьома пунктами -->
+        <nav>
+            <a href="#" style="margin-right: 15px; color: #0066cc; text-decoration: none;">Головна</a>
+            <a href="#" style="margin-right: 15px; color: #0066cc; text-decoration: none;">Новини</a>
+            <a href="#" style="color: #0066cc; text-decoration: none;">Контакти</a>
+        </nav>
+    </header>
+
+    <!-- ДВОКОЛОНКОВИЙ КОНТЕНТ (Новини + Бічна панель) -->
+    <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+
+        <!-- ОСНОВНИЙ КОНТЕНТ З НОВИНАМИ -->
+        <main style="flex: 2; min-width: 300px; display: flex; flex-direction: column; gap: 20px;">
+
+            <!-- Стаття 1 -->
+            <article style="background-color: #ffffff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                <h2 style="margin-top: 0; color: #111;">Відкрито новий кампус університету</h2>
+                <p style="margin: 0 0 10px 0;"><time datetime="2026-09-01" style="color: #888; font-size: 14px;">1 вересня 2026</time></p>
+                <p>Сьогодні відбулося офіційне відкриття нашого нового сучасного кампусу для студентів. Комплекс обладнаний за останнім словом техніки, включаючи новітні лабораторії та комфортні зони для відпочинку. Це значно розширить можливості для практичного навчання та наукових досліджень.</p>
+                <p style="margin-bottom: 0;">Автор: <strong>Ірина Коваль</strong></p>
+            </article>
+
+            <!-- Стаття 2 -->
+            <article style="background-color: #ffffff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                <h2 style="margin-top: 0; color: #111;">Стартував конкурс студентських проєктів</h2>
+                <p style="margin: 0 0 10px 0;"><time datetime="2026-09-05" style="color: #888; font-size: 14px;">5 вересня 2026</time></p>
+                <p>Кафедра оголошує початок реєстрації на щорічний конкурс інноваційних ідей та розробок. Усі учасники отримають менторську підтримку від провідних експертів ІТ-індустрії. Найкращі студентські команди будуть нагороджені цінними призами та грантами на реалізацію.</p>
+                <p style="margin-bottom: 0;">Автор: <strong>Олег Петренко</strong></p>
+            </article>
+
+            <!-- Стаття 3 -->
+            <article style="background-color: #ffffff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                <h2 style="margin-top: 0; color: #111;">Результати літньої практики</h2>
+                <p style="margin: 0 0 10px 0;"><time datetime="2026-09-10" style="color: #888; font-size: 14px;">10 вересня 2026</time></p>
+                <p>Оприлюднено короткий підсумок виробничої практики студентів у наших партнерських компаніях. Більшість здобувачів успішно впоралися із поставленими завданнями на реальних проєктах. Кілька талановитих студентів старших курсів вже отримали запрошення на постійне працевлаштування.</p>
+                <p style="margin-bottom: 0;">Автор: <strong>Марія Шевчук</strong></p>
+            </article>
+
+        </main>
+
+        <!-- БІЧНА ПАНЕЛЬ (ASIDE) -->
+        <aside style="flex: 1; min-width: 250px; background-color: #ffffff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); align-self: flex-start;">
+            <h3 style="margin-top: 0; color: #222;">Популярне</h3>
+            <!-- Маркований список із 4 пунктами-гіперпосиланнями -->
+            <ul style="padding-left: 20px; margin: 0;">
+                <li style="margin-bottom: 10px;"><a href="#" style="color: #333; text-decoration: none;">Новина 1</a></li>
+                <li style="margin-bottom: 10px;"><a href="#" style="color: #333; text-decoration: none;">Новина 2</a></li>
+                <li style="margin-bottom: 10px;"><a href="#" style="color: #333; text-decoration: none;">Новина 3</a></li>
+                <li><a href="#" style="color: #333; text-decoration: none;">Новина 4</a></li>
+            </ul>
+        </aside>
+
+    </div>
+
+    <!-- ПІДВАЛ СТОРІНКИ (FOOTER) -->
+    <hr style="border: 0; height: 1px; background-color: #ccc; margin: 30px 0 20px 0;">
+    <footer style="background-color: #ffffff; padding: 15px; border-radius: 8px; text-align: center; font-size: 14px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+        <p style="margin: 0;">
+            &copy; 2026 Останні новини &mdash; Дубковецька Уляна, гр. 2446 &mdash;
+            <a href="mailto:dubkovetska.uliana@example.com" style="color: #0066cc; text-decoration: none;">dubkovetska.uliana@example.com</a>
+        </p>
+    </footer>
+
+</div>
+
+</body>
+</html>
